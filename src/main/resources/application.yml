@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: appengine-deploy-demo
+
+---
+spring:
+  profiles: default
+message: "Hello, from local!"
+---
+spring:
+  profiles: production
+message: "Hello, from App Engine!"
